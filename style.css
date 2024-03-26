@@ -26,26 +26,26 @@ body {
 }
 
 header,
-hero-section img {
+.hero-section img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
 header,
-hero-section h1 {
+.hero-section h1 {
   font-size: 36px;
   font-weight: bold;
 }
 
 header,
-hero-section p {
+.hero-section p {
   font-size: 18px;
   margin: 20px 0;
 }
 
 header,
-hero-section a {
+.hero-section a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #68dacd;
