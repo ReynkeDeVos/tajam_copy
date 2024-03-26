@@ -25,26 +25,26 @@ body {
   text-align: center;
 }
 
-header,
+header img,
 .hero-section img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
 }
 
-header,
+header h1,
 .hero-section h1 {
   font-size: 36px;
   font-weight: bold;
 }
 
-header,
+header p,
 .hero-section p {
   font-size: 18px;
   margin: 20px 0;
 }
 
-header,
+header a,
 .hero-section a {
   display: inline-block;
   padding: 10px 20px;
