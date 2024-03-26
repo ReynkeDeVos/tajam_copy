@@ -10,6 +10,96 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-    "Helvetica Neue", sans-serif;
+  min-height: 100svh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#expertise {
+  padding-block: 4rem;
+}
+
+wrapper-for-the-title-text,
+wrapper-for-the-main-content {
+  display: grid;
+  /* margin-top: 4rem; */
+}
+
+wrapper-for-the-title-text {
+  justify-items: center;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 2.5rem;
+  grid-row-gap: 10px;
+}
+
+title-🖹 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+sub-title-🖹 {
+  color: #8d8c90;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+/* horizontal-line {
+  border-bottom: solid 5rem grey;
+  border-color: ;
+} */
+
+wrapper-for-the-title-text hr {
+  /*thickness*/
+  height: 2px;
+  /*width, not dynamic, because it is so small anyway*/
+  width: 30px;
+  background-color: #8d8c90;
+}
+
+wrapper-for-the-main-content {
+  /*3 rows, with the same size. The columns are automatic*/
+
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  margin-inline: 20%;
+  /*column-start / row-start / colum-end / row-end → not used here, because of grid magic*/
+}
+
+card-wrapper {
+  font-size: 1.1rem;
+  display: grid;
+  justify-items: center;
+  /*distance between elemts within the card*/
+  grid-gap: 2rem;
+  /*padding to the outer border of the card*/
+  padding: 2rem;
+  /* vertical-align: text-top; */
+  text-align: center;
+}
+
+card-wrapper text-head {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#card1 {
+  border-right: 0.2px solid #8d8c90;
+  border-bottom: 0.2px solid #8d8c90;
+}
+#card2 {
+  border-bottom: 0.2px solid #8d8c90;
+}
+#card3 {
+  border-left: 0.2px solid #8d8c90;
+  border-bottom: 0.2px solid #8d8c90;
+}
+
+#card4 {
+  border-right: 0.2px solid #8d8c90;
+}
+#card6 {
+  border-left: 0.2px solid #8d8c90;
 }
