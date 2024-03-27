@@ -1,138 +1,317 @@
+/*HTML resetting*/
 * {
-
-    box-sizing: border-box;
-
     margin: 0;
-
     padding: 0;
-
-}
-
-
-body {
-
-    background-color: white;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    height: 100vh;
-
-    font-family: Arial, sans-serif;
-
-}
-
-
-.container {
-
-    display: flex;
-
-    flex-direction: row;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 80%;
-
-}
-
-
-.content {
-
-    margin-left: 2rem;
-
-}
-
-
-.content h1 {
-
-    font-weight: 700;
-
-    font-size: 3rem;
-
-    color: #333;
-
-    margin-bottom: 1rem;
-
-}
-
-
-.content p {
-
-    font-size: 1.1rem;
-
-    color: #555;
-
-    line-height: 1.5;
-
-    margin-bottom: 1.5rem;
-
-}
-
-
-/* Button styles */
-
-.learn-more {
-
-    display: inline-block;
-
-    background-color:white;
-
-    color: rgb(57, 179, 41);
-
-    border: 1px solod rgb(57, 179, 41);
-    border-color: rgb(57, 179, 41);
-
-    padding: 10px 20px;
-
-    border-radius: 5px;
-
-    text-transform: uppercase;
-
-    cursor: pointer;
-
-    transition: all 0.2s ease;
-
-}
-
-
-.learn-more:hover {
-
-    background-color: #228b3d;
-
-}
-
-
-.learn-more span {
-
-    display: block;
-
+    box-sizing: border-box;
+  }
+  
+  html {
+    /* 1rem = 10px */
+    /* font-size: 62.5%; */
+    /*font size is responsive to screen size*/
+    /* font-size: calc(15px + 0.390625vw); */
+    font-size: calc(1rem + 0.25vw);
+  }
+  
+  body {
+    min-height: 100svh;
+    /* min-width: 100svw; */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  
+  /* styles.css */
+  .hero-section {
+    background-image: url ("C:\Users\cooki\OneDrive\Desktop\tajam_cop\bgk-header.png");
+    background-size: cover;
+    color: #f1f0f7;
     text-align: center;
-
-}
-
-
-/* Logo styles */
-
-.logo {
-
+    padding: 100px 0;
+    background-color: #333061;
+    text-align: center;
+  }
+  
+  header img,
+  .hero-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  header h1,
+  .hero-section h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  header p,
+  .hero-section p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  header a,
+  .hero-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #68dacd;
+  
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  
+    .navbar {
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #333;
+      width: 200px;
+      height: 100%;
+      padding-top: 20px;
+      text-align: right;
+    }
+  
+    .navbar a {
+      display: block;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
+    }
+  }
+  
+  .story {
+    background-color: white;
+  
     display: flex;
-
-    align-items: center;
-
+  
     justify-content: center;
-
-}
-
-
-.logo img {
-
+  
+    align-items: center;
+  
+    /* height: 100vh; */
+  
+    font-family: Arial, sans-serif;
+    
+    padding: 100px 0;
+   
+    text-align: center;
+  }
+  
+  
+  .container {
+    display: flex;
+  
+    flex-direction: row;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    width: 80%;
+  }
+  
+  .content {
+    margin-left: 2rem;
+    text-align: center;
+  }
+  
+  .content h1 {
+    font-weight: 700;
+  
+    font-size: 3rem;
+  
+    color: #333;
+  
+    margin-bottom: 1rem;
+  }
+  
+  .content p {
+    font-size: 1.1rem;
+  
+    color: #555;
+  
+    line-height: 1.5;
+  
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Button styles */
+  .learn-more {
+    display: inline-block;
+  
+    background-color: white;
+  
+    color: rgb(57, 179, 41);
+  
+    border: 1px solid rgb(57, 179, 41);
+    border-color: rgb(57, 179, 41);
+  
+    padding: 10px 20px;
+  
+    border-radius: 5px;
+  
+    text-transform: uppercase;
+  
+    cursor: pointer;
+  
+    transition: all 0.2s ease;
+  }
+  
+  .learn-more:hover {
+    background-color: #228b3d;
+  }
+  
+  .learn-more span {
+    display: block;
+  
+    text-align: center;
+  }
+  
+  /* Logo styles */
+  .logo {
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  }
+  
+  .logo img {
     height: 100%;
-
+  
     width: auto;
+  }
+  /*hajar-----------*/
+  .story-section {
+  background-image: url('./design-assets/bgk-middle.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
 
+  text-align: center;
 }
+
+
+.story-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.story-icon:hover {
+  transform: scale(1.2);
+}
+
+.story-text-container {
+  text-align: center;
+}
+
+.story-text {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+.story-icon:hover{
+    transform: scale(1.2);
+}
+  /*Renke --------- EXPERTISE ---------------------------------------------------------------*/
+  #expertise {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+  
+  wrapper-for-the-title-text,
+  wrapper-for-the-main-content {
+    display: grid;
+    /* margin-top: 4rem; */
+  }
+  
+  wrapper-for-the-title-text {
+    justify-items: center;
+    font-family: "Times New Roman", Times, serif;
+    padding-bottom: 2.5rem;
+    grid-row-gap: 10px;
+  }
+  
+  title-🖹 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  sub-title-🖹 {
+    color: #8d8c90;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  
+  /* horizontal-line {
+    border-bottom: solid 5rem grey;
+    border-color: ;
+  } */
+  
+  wrapper-for-the-title-text hr {
+    /*thickness*/
+    height: 2px;
+    /*width, not dynamic, because it is so small anyway*/
+    width: 30px;
+    background-color: #8d8c90;
+  }
+  
+  wrapper-for-the-main-content {
+    /*3 rows, with the same size. The columns are automatic*/
+  
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+  
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-inline: 15%;
+  
+    justify-items: center;
+    /*column-start / row-start / colum-end / row-end → not used here, because of grid magic*/
+  }
+  
+  card-wrapper {
+    font-size: 1rem;
+    display: grid;
+    justify-items: center;
+    /*distance between elemts within the card*/
+    grid-gap: 2rem;
+    /*padding to the outer border of the card*/
+    padding: 2rem;
+    /* vertical-align: text-top; */
+    text-align: center;
+    /* overflow: hidden; */
+  }
+  
+  card-wrapper text-head {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  #card1 {
+    border-right: 0.2px solid #8d8c90;
+    border-bottom: 0.2px solid #8d8c90;
+  }
+  #card2 {
+    border-bottom: 0.2px solid #8d8c90;
+  }
+  #card3 {
+    border-left: 0.2px solid #8d8c90;
+    border-bottom: 0.2px solid #8d8c90;
+  }
+  
+  #card4 {
+    border-right: 0.2px solid #8d8c90;
+  }
+  #card6 {
+    border-left: 0.2px solid #8d8c90;
+  }
