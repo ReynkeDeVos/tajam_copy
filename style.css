@@ -12,25 +12,6 @@
 /* Playfair Display  */
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.hammersmith-one-regular {
-  font-family: "Hammersmith One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.playfair-display-regular {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-} */
-
 :root {
   --font-serif: "Playfair Display", serif;
   --font-sans: "Roboto", sans-serif;
@@ -46,7 +27,6 @@ html {
 }
 
 body {
-  /* min-height: 100vh; */
   font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
   display: flex;
@@ -59,6 +39,7 @@ footer {
   margin-top: auto;
 }
 
+/*-----Sabrina-------------------------------------------------------*/
 /* styles.css */
 .hero-section {
   background-image: url ("C:\Users\cooki\OneDrive\Desktop\tajam_cop\bgk-header.png");
@@ -118,7 +99,9 @@ header a,
     text-decoration: none;
   }
 }
+/*-----Sabrina-------------------------------------------------------*/
 
+/*hajar------------Story------------------------------------------*/
 .story {
   background-color: white;
 
@@ -221,7 +204,7 @@ header a,
   width: auto;
 }
 
-/*hajar------------------------------------------------------*/
+/*hajar------------------Watch------------------------------------*/
 .story-section {
   background-image: url("./design-assets/bgk-middle.png");
   background-size: cover;
@@ -237,20 +220,6 @@ header a,
   text-align: center;
 }
 
-/* Logo styles */
-.logo {
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-}
-
-.logo img {
-  height: 100%;
-
-  width: auto;
-}
 .story-text {
   font-size: 24px;
   color: white;
@@ -274,7 +243,7 @@ header a,
 .story-text-container {
   text-align: center;
 
-  /*overflow: hidden; */
+  overflow: hidden;
 }
 /*hajar------------------------------------------------------*/
 
