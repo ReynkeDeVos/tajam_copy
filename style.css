@@ -216,7 +216,7 @@ wrapper-for-the-title-text hr {
   /*thickness*/
   height: 2px;
   /*width, not dynamic, because it is so small anyway*/
-  width: 30px;
+  width: 3rem;
   background-color: #8d8c90;
 }
 
@@ -237,7 +237,7 @@ wrapper-for-the-main-content {
 card-wrapper {
   font-size: 1rem;
   display: grid;
-  justify-items: center;
+  place-items: center;
   /*distance between elemts within the card*/
   grid-gap: 2rem;
   /*padding to the outer border of the card*/
@@ -271,3 +271,148 @@ card-wrapper text-head {
   border-left: 0.2px solid #8d8c90;
 }
 /*--------- EXPERTISE ---------------------------------------------------------------*/
+
+/*--------- TEAM ---------------------------------------------------------------*/
+#team {
+}
+
+background-🖻-middle {
+  background-image: url("./design-assets/bgk-middle.png");
+  min-width: 100svw;
+  min-height: 50svh;
+  background-repeat: no-repeat;
+  /*cover needed, that elemts are ontop of image*/
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  /* place-items: center; */
+  align-content: space-evenly;
+  justify-content: center;
+}
+
+wrapper-for-the-title-text-team {
+  margin-top: 4rem;
+  display: grid;
+  /* justify-items: center; */
+  place-items: center;
+  font-family: "Times New Roman", Times, serif;
+  padding-bottom: 2.5rem;
+  grid-row-gap: 10px;
+  color: white;
+}
+
+title-🖹-team {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+}
+
+sub-title-🖹-team {
+  color: #8d8c90;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+wrapper-for-the-title-text-team hr {
+  /*thickness*/
+  height: 2px;
+  /*width, not dynamic, because it is so small anyway*/
+  width: 3rem;
+  background-color: #8d8c90;
+}
+
+team-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: auto; */
+  grid-column-gap: 1svw;
+  grid-row-gap: 0px;
+
+  /* margin-inline: 15%; */
+}
+
+team-card {
+  border: 0.1px solid grey;
+  display: flex;
+  flex-direction: column;
+  /*font size, minimum, default, max*/
+  width: 200px;
+  overflow: hidden;
+}
+
+card-header img {
+  background: #ece9e6;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+card-footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+
+  text-name {
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  text-job-title {
+    font-size: 0.6rem;
+    color: grey;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+wrapper-bottom {
+  display: grid;
+  place-items: center;
+  grid-row-gap: 1.1rem;
+  margin-block: 5%;
+
+  p {
+    color: #8d8c90;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+}
+wrapper-bottom button {
+  text-transform: uppercase;
+  color: #5bc1bb;
+  font-size: 0.7rem;
+  font-weight: bold;
+
+  align-items: center;
+  background: 0 0;
+  border: 1.5px solid #5bc1bb;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-flex;
+  flex-shrink: 0;
+
+  justify-content: center;
+  line-height: 1.5;
+  overflow: hidden;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  transition: all 0.14s ease-out;
+  white-space: nowrap;
+
+  &:hover {
+    box-shadow: 4px 4px 0 lightblue;
+    transform: translate(-4px, -4px);
+  }
+
+  &:focus-visible {
+    outline-offset: 1px;
+  }
+}
+
+/*--------- TEAM ---------------------------------------------------------------*/
