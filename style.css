@@ -292,49 +292,6 @@ wrapper-for-the-main-content {
 
 wrapper-for-the-title-text {
   justify-items: center;
-  font-family: var(--font-serif);
-  padding-bottom: 2.5rem;
-  grid-row-gap: 10px;
-}
-
-title-🖹 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-sub-title-🖹 {
-  color: #8d8c90;
-  font-weight: 700;
-  font-size: 0.9rem;
-}
-
-card-wrapper text-head {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: var(--font-sans-bold);
-  font-size: 0.8rem;
-}
-
-text-sub {
-  font-family: var(--font-sans);
-  font-size: 0.8rem;
-}
-
-/*Renke --------- EXPERTISE ---------------------------------------------------------------*/
-#expertise {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
-wrapper-for-the-title-text,
-wrapper-for-the-main-content {
-  display: grid;
-  /* margin-top: 4rem; */
-}
-
-wrapper-for-the-title-text {
-  justify-items: center;
   font-family: "Times New Roman", Times, serif;
   padding-bottom: 2.5rem;
   grid-row-gap: 10px;
