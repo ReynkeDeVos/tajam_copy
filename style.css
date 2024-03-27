@@ -16,6 +16,10 @@
   --font-serif: "Playfair Display", serif;
   --font-sans: "Roboto", sans-serif;
   --font-sans-bold: "Hammersmith One", sans-serif;
+
+  --color-dark-grey: #636268;
+  --color-light-grey: #c6c4c9;
+  --color-turquoise: #00e0d0;
 }
 
 html {
@@ -247,10 +251,10 @@ header a,
 }
 /*hajar------------------------------------------------------*/
 
-/*Renke --------- EXPERTISE ---------------------------------------------------------------*/
+/*--------- EXPERTISE ------------------------BEGIN---------------------------------------*/
 #expertise {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 wrapper-for-the-title-text,
@@ -261,21 +265,23 @@ wrapper-for-the-main-content {
 
 wrapper-for-the-title-text {
   justify-items: center;
-  font-family: "Times New Roman", Times, serif;
-  padding-bottom: 2.5rem;
+  font-family: var(--font-serif);
+  padding-bottom: 2rem;
   grid-row-gap: 10px;
 }
 
 title-🖹 {
-  font-size: 2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bold;
+  opacity: 0.6;
 }
 
 sub-title-🖹 {
-  color: #8d8c90;
-  font-weight: 700;
-  font-size: 1.2rem;
+  color: var(--color-dark-grey);
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0.6;
 }
 
 /* horizontal-line {
@@ -287,8 +293,10 @@ wrapper-for-the-title-text hr {
   /*thickness*/
   height: 2px;
   /*width, not dynamic, because it is so small anyway*/
-  width: 30px;
-  background-color: #8d8c90;
+  width: 2.5rem;
+  /* background-color: var(--color-light-grey); */
+  background-color: var(--color-light-grey);
+  opacity: 0.5;
 }
 
 wrapper-for-the-main-content {
@@ -306,11 +314,10 @@ wrapper-for-the-main-content {
 }
 
 card-wrapper {
-  font-size: 1rem;
   display: grid;
   justify-items: center;
   /*distance between elemts within the card*/
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   /*padding to the outer border of the card*/
   padding: 2rem;
   /* vertical-align: text-top; */
@@ -319,32 +326,40 @@ card-wrapper {
 }
 
 card-wrapper text-head {
+  font-family: var(--font-sans-bold);
+  font-size: 0.7rem;
   text-transform: uppercase;
   font-weight: bold;
 }
 
+text-sub {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-dark-grey);
+  opacity: 0.7;
+}
+
 #card1 {
-  border-right: 0.2px solid #8d8c90;
-  border-bottom: 0.2px solid #8d8c90;
+  border-right: 0.2px solid rgb(198, 196, 201, 0.5);
+  border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 #card2 {
-  border-bottom: 0.2px solid #8d8c90;
+  border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 #card3 {
-  border-left: 0.2px solid #8d8c90;
-  border-bottom: 0.2px solid #8d8c90;
+  border-left: 0.2px solid rgb(198, 196, 201, 0.5);
+  border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 
 #card4 {
-  border-right: 0.2px solid #8d8c90;
+  border-right: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 #card6 {
-  border-left: 0.2px solid #8d8c90;
+  border-left: 0.2px solid rgb(198, 196, 201, 0.5);
 }
+/*--------- EXPERTISE ---------------------------END------------------------------------*/
 
-/*--------- EXPERTISE ---------------------------------------------------------------*/
-
-/*--------- TEAM ---------------------------------------------------------------*/
+/*--------- TEAM -------------------------------BEGIN--------------------------------*/
 
 background-🖻-middle {
   background-image: url("./design-assets/bgk-middle.png");
@@ -365,31 +380,33 @@ wrapper-for-the-title-text-team {
   display: grid;
   /* justify-items: center; */
   place-items: center;
-  font-family: "Times New Roman", Times, serif;
-  padding-bottom: 2.5rem;
+  font-family: var(--font-serif);
+  padding-bottom: 2rem;
   grid-row-gap: 10px;
   color: white;
 }
 
 title-🖹-team {
-  font-size: 2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bold;
   color: white;
 }
 
 sub-title-🖹-team {
-  color: #8d8c90;
-  font-weight: 700;
-  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 wrapper-for-the-title-text-team hr {
   /*thickness*/
   height: 2px;
   /*width, not dynamic, because it is so small anyway*/
-  width: 3rem;
-  background-color: #8d8c90;
+  width: 2.5rem;
+  background-color: var(--color-light-grey);
+  opacity: 0.5;
 }
 
 team-cards-container {
@@ -403,7 +420,7 @@ team-cards-container {
 }
 
 team-card {
-  border: 0.1px solid grey;
+  border: 0.1px solid rgb(198, 196, 201, 0.4);
   display: flex;
   flex-direction: column;
   /*font size, minimum, default, max*/
@@ -412,7 +429,7 @@ team-card {
 }
 
 card-header img {
-  background: #ece9e6;
+  background: white;
   max-width: 100%;
   display: block;
   object-fit: cover;
@@ -423,20 +440,21 @@ card-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.3rem;
   color: white;
 
   text-name {
+    font-family: var(--font-sans-bold);
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   text-job-title {
-    font-size: 0.6rem;
-    color: grey;
-    font-weight: bold;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
     text-transform: uppercase;
+    opacity: 0.6;
   }
 }
 
@@ -484,9 +502,9 @@ wrapper-bottom button {
     outline-offset: 1px;
   }
 }
+/*--------- TEAM ------------------------------------END---------------------------*/
 
-/*--------- TEAM ---------------------------------------------------------------*/
-
+/*------Ali-------------------------*/
 @media screen and (min-width: 80rem) {
   .section5 {
     margin: 1em 2em;
