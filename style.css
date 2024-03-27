@@ -270,7 +270,6 @@ header a,
 wrapper-for-the-title-text,
 wrapper-for-the-main-content {
   display: grid;
-  /* margin-top: 4rem; */
 }
 
 wrapper-for-the-title-text {
@@ -362,6 +361,27 @@ text-sub {
 #card6 {
   border-left: 0.2px solid rgb(198, 196, 201, 0.5);
 }
+
+@media only screen and (max-width: 768px) {
+  wrapper-for-the-main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-inline: 0%;
+
+    justify-items: center;
+    /*column-start / row-start / colum-end / row-end → not used here, because of grid magic*/
+  }
+  card-wrapper {
+    border: none;
+    border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
+  }
+  #card6 {
+    border: none;
+  }
+}
 /*--------- EXPERTISE ---------------------------END------------------------------------*/
 
 /*--------- TEAM -------------------------------BEGIN--------------------------------*/
@@ -426,8 +446,8 @@ team-cards-container {
 
 team-card {
   border: 0.1px solid rgb(198, 196, 201, 0.4);
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   /*font size, minimum, default, max*/
   width: 200px;
   overflow: hidden;
@@ -500,7 +520,7 @@ wrapper-bottom button {
   white-space: nowrap;
 
   &:hover {
-    box-shadow: 4px 4px 0 lightblue;
+    box-shadow: 4px 4px 0 var(--color-turquoise);
     transform: translate(-4px, -4px);
   }
 
@@ -508,6 +528,18 @@ wrapper-bottom button {
     outline-offset: 1px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  team-cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 1rem;
+    justify-items: center;
+  }
+}
+
 /*--------- TEAM ------------------------------------END---------------------------*/
 
 /*------Ali-------------------------*/
