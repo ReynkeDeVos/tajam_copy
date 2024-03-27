@@ -472,13 +472,13 @@ wrapper-bottom {
 }
 wrapper-bottom button {
   text-transform: uppercase;
-  color: #5bc1bb;
+  color: var(--color-turquoise);
   font-size: 0.7rem;
   font-weight: bold;
 
   align-items: center;
   background: 0 0;
-  border: 1.5px solid #5bc1bb;
+  border: 1.5px solid var(--color-turquoise);
   border-radius: 4px;
   cursor: pointer;
   display: inline-flex;
