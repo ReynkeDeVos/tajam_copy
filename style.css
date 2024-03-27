@@ -1,3 +1,4 @@
+
 /*HTML resetting*/
 * {
   margin: 0;
@@ -72,6 +73,133 @@ header a,
     color: white;
     text-decoration: none;
   }
+}
+.story{
+
+    background-color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+.container {
+
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 80%;
+
+}
+
+
+.content {
+
+    margin-left: 2rem;
+
+}
+
+
+.content h1 {
+
+    font-weight: 700;
+
+    font-size: 3rem;
+
+    color: #333;
+
+    margin-bottom: 1rem;
+
+}
+
+
+.content p {
+
+    font-size: 1.1rem;
+
+    color: #555;
+
+    line-height: 1.5;
+
+    margin-bottom: 1.5rem;
+
+}
+
+
+/* Button styles */
+
+.learn-more {
+
+    display: inline-block;
+
+    background-color:white;
+
+    color: rgb(57, 179, 41);
+
+    border: 1px solod rgb(57, 179, 41);
+    border-color: rgb(57, 179, 41);
+
+    padding: 10px 20px;
+
+    border-radius: 5px;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+
+}
+
+
+.learn-more:hover {
+
+    background-color: #228b3d;
+
+}
+
+
+.learn-more span {
+
+    display: block;
+
+    text-align: center;
+
+}
+
+
+/* Logo styles */
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.logo img {
+
+    height: 100%;
+
+    width: auto;
+
 }
 /*Renke --------- EXPERTISE ---------------------------------------------------------------*/
 #expertise {
@@ -164,3 +292,4 @@ card-wrapper text-head {
   border-left: 0.2px solid #8d8c90;
 }
 /*Renke --------- EXPERTISE ---------------------------------------------------------------*/
+
