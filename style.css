@@ -506,6 +506,8 @@ section 5 textarea {
     url("https://assets.website-files.com/57cf0f32d528a1235f58c7f5/57cf0f591d3807cb6dae3f63_contact-background.jpg");
   border-image-width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .footr1 {
   display: flex;
