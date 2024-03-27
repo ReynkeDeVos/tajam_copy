@@ -31,6 +31,10 @@
   font-style: normal;
 } */
 
+:root {
+  --font-serif: ;
+}
+
 html {
   /* 1rem = 10px */
   /* font-size: 62.5%; */
@@ -479,18 +483,18 @@ wrapper-bottom button {
   line-height: 1.42857143;
 }
 
-section5 h3 {
+.section5 h3 {
   color: #333333;
   font-size: 2rem;
   border: none;
 }
-section 5 input {
+.section5 input {
   margin-bottom: 1rem;
   padding: 1rem;
   width: 23.8rem;
 }
 
-section 5 textarea {
+.section5 textarea {
   padding: 0.5rem 0.5rem;
   width: 23.8rem;
 }
