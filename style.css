@@ -6,7 +6,10 @@
 }
 
 html {
-  font-size: 62.5%; /* 1rem = 10px */
+  /* 1rem = 10px */
+  /* font-size: 62.5%; */
+  /*font size is responsive to screen size*/
+  font-size: calc(15px + 0.390625vw);
 }
 
 body {
@@ -124,7 +127,8 @@ wrapper-for-the-main-content {
 
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  margin-inline: 20%;
+  /* margin-inline: 20%; */
+  justify-items: center;
   /*column-start / row-start / colum-end / row-end → not used here, because of grid magic*/
 }
 
@@ -138,6 +142,8 @@ card-wrapper {
   padding: 2rem;
   /* vertical-align: text-top; */
   text-align: center;
+
+  /* overflow: hidden; */
 }
 
 card-wrapper text-head {
