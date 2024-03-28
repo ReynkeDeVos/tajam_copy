@@ -30,6 +30,10 @@ footer {
 
 /* Sabrina Header und Hero Section Start */
 
+header {
+	background-color: #333061;
+}
+
 .navbar {
 
 	padding: 25px 30px;
