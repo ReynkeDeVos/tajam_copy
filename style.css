@@ -530,7 +530,7 @@ wrapper-bottom button {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 932px) {
   team-cards-container {
     display: grid;
     grid-template-columns: 100%;
