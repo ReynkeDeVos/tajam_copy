@@ -12,27 +12,14 @@
 /* Playfair Display  */
 @import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.hammersmith-one-regular {
-  font-family: "Hammersmith One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.playfair-display-regular {
-  font-family: "Playfair Display", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-} */
-
 :root {
-  --font-serif: ;
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Roboto", sans-serif;
+  --font-sans-bold: "Hammersmith One", sans-serif;
+
+  --color-dark-grey: #636268;
+  --color-light-grey: #c6c4c9;
+  --color-turquoise: #00e0d0;
 }
 
 html {
@@ -44,9 +31,9 @@ html {
 }
 
 body {
-  /* min-height: 100vh; */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -58,18 +45,28 @@ footer {
   margin-top: auto;
 }
 
-/* styles.css */
+/* Sabrina Header und Hero Section Start */
+.navbar {
+  padding: 25px 30px;
+  background-color: #333061;
+  font-family: Arial, sans-serif;
+  font-size: small;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
 .hero-section {
-  background-image: url
-    ("C:\Users\cooki\OneDrive\Desktop\tajam_cop\bgk-header.png");
+  background-image: url("./design-assets/bgk-header.png");
   background-size: cover;
   color: #f1f0f7;
   text-align: center;
-  padding: 100px 0;
-  background-color: #333061;
+  padding: 25% 30%;
   text-align: center;
 }
 
+/* Sabrina Header und Hero Section END */
 header img,
 .hero-section img {
   max-width: 100%;
@@ -118,7 +115,9 @@ header a,
     text-decoration: none;
   }
 }
+/*-----Sabrina-------------------------------------------------------*/
 
+/*hajar------------Story------------------------------------------*/
 .story {
   background-color: white;
 
@@ -131,6 +130,10 @@ header a,
   /* height: 100vh; */
 
   font-family: Arial, sans-serif;
+
+  padding: 100px 0;
+
+  text-align: center;
 }
 
 .container {
@@ -147,6 +150,7 @@ header a,
 
 .content {
   margin-left: 2rem;
+  text-align: center;
 }
 
 .content h1 {
@@ -216,48 +220,89 @@ header a,
   width: auto;
 }
 
-/*Renke --------- EXPERTISE ---------------------------------------------------------------*/
+/*hajar------------------Watch------------------------------------*/
+.story-section {
+  background-image: url("./design-assets/bgk-middle.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+
+  text-align: center;
+}
+
+.story-text {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+.story-icon:hover {
+  transform: scale(1.2);
+}
+
+.story-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.story-icon:hover {
+  transform: scale(1.2);
+}
+
+.story-text-container {
+  text-align: center;
+
+  overflow: hidden;
+}
+/*hajar------------------------------------------------------*/
+
+/*--------- EXPERTISE ------------------------BEGIN---------------------------------------*/
 #expertise {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 
 wrapper-for-the-title-text,
 wrapper-for-the-main-content {
   display: grid;
-  /* margin-top: 4rem; */
 }
 
 wrapper-for-the-title-text {
   justify-items: center;
-  font-family: "Times New Roman", Times, serif;
-  padding-bottom: 2.5rem;
+  font-family: var(--font-serif);
+  padding-bottom: 2rem;
   grid-row-gap: 10px;
 }
 
 title-🖹 {
-  font-size: 2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bold;
+  opacity: 0.6;
 }
 
 sub-title-🖹 {
-  color: #8d8c90;
-  font-weight: 700;
-  font-size: 1.2rem;
+  color: var(--color-dark-grey);
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0.6;
 }
-
-/* horizontal-line {
-  border-bottom: solid 5rem grey;
-  border-color: ;
-} */
 
 wrapper-for-the-title-text hr {
   /*thickness*/
   height: 2px;
   /*width, not dynamic, because it is so small anyway*/
-  width: 3rem;
-  background-color: #8d8c90;
+  width: 2.5rem;
+  /* background-color: var(--color-light-grey); */
+  background-color: var(--color-light-grey);
+  opacity: 0.5;
 }
 
 wrapper-for-the-main-content {
@@ -275,11 +320,10 @@ wrapper-for-the-main-content {
 }
 
 card-wrapper {
-  font-size: 1rem;
   display: grid;
-  place-items: center;
+  justify-items: center;
   /*distance between elemts within the card*/
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   /*padding to the outer border of the card*/
   padding: 2rem;
   /* vertical-align: text-top; */
@@ -288,36 +332,65 @@ card-wrapper {
 }
 
 card-wrapper text-head {
+  font-family: var(--font-sans-bold);
+  font-size: 0.7rem;
   text-transform: uppercase;
   font-weight: bold;
 }
 
+text-sub {
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  color: var(--color-dark-grey);
+  opacity: 0.7;
+}
+
 #card1 {
-  border-right: 0.2px solid #8d8c90;
-  border-bottom: 0.2px solid #8d8c90;
+  border-right: 0.2px solid rgb(198, 196, 201, 0.5);
+  border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 #card2 {
-  border-bottom: 0.2px solid #8d8c90;
+  border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 #card3 {
-  border-left: 0.2px solid #8d8c90;
-  border-bottom: 0.2px solid #8d8c90;
+  border-left: 0.2px solid rgb(198, 196, 201, 0.5);
+  border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 
 #card4 {
-  border-right: 0.2px solid #8d8c90;
+  border-right: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 #card6 {
-  border-left: 0.2px solid #8d8c90;
-}
-/*--------- EXPERTISE ---------------------------------------------------------------*/
-
-/*--------- TEAM ---------------------------------------------------------------*/
-#team {
+  border-left: 0.2px solid rgb(198, 196, 201, 0.5);
 }
 
+@media only screen and (max-width: 768px) {
+  wrapper-for-the-main-content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-inline: 0%;
+    justify-items: center;
+  }
+  #card1,
+  #card2,
+  #card3,
+  #card4,
+  #card5 {
+    border: 0;
+    border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
+  }
+  #card6 {
+    border: none;
+  }
+}
+/*--------- EXPERTISE ---------------------------END------------------------------------*/
+
+/*--------- TEAM -------------------------------BEGIN--------------------------------*/
 background-🖻-middle {
-  background-image: url("./design-assets/bgk-middle.png");
+  background-image: url("./design-assets/bgk-header.png");
   min-width: 100svw;
   min-height: 50svh;
   background-repeat: no-repeat;
@@ -335,31 +408,33 @@ wrapper-for-the-title-text-team {
   display: grid;
   /* justify-items: center; */
   place-items: center;
-  font-family: "Times New Roman", Times, serif;
-  padding-bottom: 2.5rem;
+  font-family: var(--font-serif);
+  padding-bottom: 2rem;
   grid-row-gap: 10px;
   color: white;
 }
 
 title-🖹-team {
-  font-size: 2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bold;
   color: white;
 }
 
 sub-title-🖹-team {
-  color: #8d8c90;
-  font-weight: 700;
-  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8rem;
+  opacity: 0.85;
 }
 
 wrapper-for-the-title-text-team hr {
   /*thickness*/
   height: 2px;
   /*width, not dynamic, because it is so small anyway*/
-  width: 3rem;
-  background-color: #8d8c90;
+  width: 2.5rem;
+  background-color: var(--color-light-grey);
+  opacity: 0.5;
 }
 
 team-cards-container {
@@ -373,16 +448,17 @@ team-cards-container {
 }
 
 team-card {
-  border: 0.1px solid grey;
-  display: flex;
-  flex-direction: column;
+  border: 0.1px solid rgb(198, 196, 201, 0.4);
+  /* display: flex;
+  flex-direction: column; */
   /*font size, minimum, default, max*/
   width: 200px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 card-header img {
-  background: #ece9e6;
+  background: white;
   max-width: 100%;
   display: block;
   object-fit: cover;
@@ -393,44 +469,45 @@ card-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.3rem;
   color: white;
 
   text-name {
+    font-family: var(--font-sans-bold);
     font-size: 0.8rem;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   text-job-title {
-    font-size: 0.6rem;
-    color: grey;
-    font-weight: bold;
+    font-family: var(--font-sans);
+    font-size: 0.7rem;
     text-transform: uppercase;
+    opacity: 0.6;
   }
 }
 
 wrapper-bottom {
   display: grid;
   place-items: center;
-  grid-row-gap: 1.1rem;
+  grid-row-gap: 0.5rem;
   margin-block: 5%;
 
   p {
-    color: #8d8c90;
+    color: var(--color-light-grey);
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
   }
 }
 wrapper-bottom button {
   text-transform: uppercase;
-  color: #5bc1bb;
+  color: var(--color-turquoise);
   font-size: 0.7rem;
   font-weight: bold;
 
   align-items: center;
   background: 0 0;
-  border: 1.5px solid #5bc1bb;
+  border: 1.5px solid var(--color-turquoise);
   border-radius: 4px;
   cursor: pointer;
   display: inline-flex;
@@ -446,7 +523,7 @@ wrapper-bottom button {
   white-space: nowrap;
 
   &:hover {
-    box-shadow: 4px 4px 0 lightblue;
+    box-shadow: 4px 4px 0 var(--color-turquoise);
     transform: translate(-4px, -4px);
   }
 
@@ -455,9 +532,19 @@ wrapper-bottom button {
   }
 }
 
-/*--------- TEAM ---------------------------------------------------------------*/
+@media only screen and (max-width: 932px) {
+  team-cards-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 1rem;
+    justify-items: center;
+  }
+}
 
-/* ---------------------Ali teil---------------- */
+/*------Ali-------------------------*/
+
 @media screen and (min-width: 80rem) {
   .section5 {
     margin: 1em 2em;
@@ -698,4 +785,69 @@ wrapper-bottom button {
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+element.style {
+  height: 100%;
+}
+User-Agent-Stylesheet :root {
+  view-transition-name: root;
+}
+User-Agent-Stylesheet html {
+  display: block;
+}
+/* styles.css */
+.hero-section {
+  background-image: url "####";
+  background-size: cover;
+  color: #f1f0f7;
+  text-align: center;
+  padding: 100px 0;
+  background-color: #333061;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #68dacd;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    height: 100%;
+    padding-top: 20px;
+    text-align: right;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
 }
