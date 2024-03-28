@@ -46,6 +46,49 @@ footer {
 }
 
 /* Sabrina Header und Hero Section Start */
+
+.backgroundimg {
+  background-image: url("./design-assets/bgk-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-width: 100svw;
+  min-height: 50svh;
+}
+
+.türkis {
+  color: #00e0d0;
+}
+.logo1 {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  /* padding: 3% 10% 20% 10%; */
+  height: Auto;
+  width: 100%;
+}
+header {
+  height: 20px;
+}
+header a,
+.hero-section a {
+  display: inline-block;
+  padding: 20px 20px;
+  font-family: Arial, sans-serif;
+  font-size: small;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.Logonav {
+  display: flex;
+}
+.hero-section {
+  color: #f1f0f7;
+  text-align: center;
+  padding: 15% 15%;
+  text-align: center;
+}
 .navbar {
   padding: 25px 30px;
   background-color: #333061;
