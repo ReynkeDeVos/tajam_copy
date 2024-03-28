@@ -365,17 +365,19 @@ text-sub {
 @media only screen and (max-width: 768px) {
   wrapper-for-the-main-content {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     margin-inline: 0%;
-
     justify-items: center;
-    /*column-start / row-start / colum-end / row-end → not used here, because of grid magic*/
   }
-  card-wrapper {
-    border: none;
+  #card1,
+  #card2,
+  #card3,
+  #card4,
+  #card5 {
+    border: 0;
     border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
   }
   #card6 {
@@ -385,7 +387,6 @@ text-sub {
 /*--------- EXPERTISE ---------------------------END------------------------------------*/
 
 /*--------- TEAM -------------------------------BEGIN--------------------------------*/
-
 background-🖻-middle {
   background-image: url("./design-assets/bgk-header.png");
   min-width: 100svw;
@@ -532,8 +533,8 @@ wrapper-bottom button {
 @media only screen and (max-width: 768px) {
   team-cards-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
     grid-column-gap: 0px;
     grid-row-gap: 1rem;
     justify-items: center;
