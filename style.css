@@ -5,23 +5,6 @@
   box-sizing: border-box;
 }
 
-/* Roboto*/
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* Hammersmith One */
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-/* Playfair Display  */
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-:root {
-  --font-serif: "Playfair Display", serif;
-  --font-sans: "Roboto", sans-serif;
-  --font-sans-bold: "Hammersmith One", sans-serif;
-
-  --color-dark-grey: #636268;
-  --color-light-grey: #c6c4c9;
-  --color-turquoise: #00e0d0;
-}
-
 html {
   /* 1rem = 10px */
   /* font-size: 62.5%; */
@@ -31,6 +14,7 @@ html {
 }
 
 body {
+
   font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
@@ -46,78 +30,59 @@ footer {
 }
 
 /* Sabrina Header und Hero Section Start */
+
+.backgroundimg {
+	background-image: url("./design-assets/bgk-header.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-width: 100svw;
+	min-height: 50svh;
+}
+
 .navbar {
-  padding: 25px 30px;
-  background-color: #333061;
-  font-family: Arial, sans-serif;
-  font-size: small;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
+}
+
+.türkis {
+	color: #00e0d0;
+}
+
+.logo1 {
+	display: flex;
+	align-items: left;
+	justify-content: left;
+	padding: 3% 30% 20% 10%;
+	height: Auto;
+	width: 100%;
+}
+
+.Logonav {
+	display: flex;
+}
+header {
+	height: 20px;
+}
+header a,
+.hero-section a {
+	display: inline-block;
+	padding: 20px 20px;
+	font-family: Arial, sans-serif;
+	font-size: small;
+	color: white;
+	text-decoration: none;
+	white-space: nowrap;
 }
 
 .hero-section {
-  background-image: url("./design-assets/bgk-header.png");
-  background-size: cover;
-  color: #f1f0f7;
-  text-align: center;
-  padding: 25% 30%;
-  text-align: center;
+	color: #f1f0f7;
+	text-align: center;
+	padding: 15% 15%;
+	text-align: center;
 }
 
 /* Sabrina Header und Hero Section END */
-header img,
-.hero-section img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
 
-header h1,
-.hero-section h1 {
-  font-size: 36px;
-  font-weight: bold;
-}
 
-header p,
-.hero-section p {
-  font-size: 18px;
-  margin: 20px 0;
-}
-
-header a,
-.hero-section a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #68dacd;
-
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s;
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    background-color: #333;
-    width: 200px;
-    height: 100%;
-    padding-top: 20px;
-    text-align: right;
-  }
-
-  .navbar a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-  }
-}
-/*-----Sabrina-------------------------------------------------------*/
-
-/*hajar------------Story------------------------------------------*/
 .story {
   background-color: white;
 
@@ -129,11 +94,8 @@ header a,
 
   /* height: 100vh; */
 
-  font-family: Arial, sans-serif;
 
-  padding: 100px 0;
-
-  text-align: center;
+	font-family: Arial, sans-serif;
 }
 
 .container {
@@ -149,8 +111,9 @@ header a,
 }
 
 .content {
-  margin-left: 2rem;
-  text-align: center;
+
+	margin-left: 2rem;
+
 }
 
 .content h1 {
@@ -220,53 +183,12 @@ header a,
   width: auto;
 }
 
-/*hajar------------------Watch------------------------------------*/
-.story-section {
-  background-image: url("./design-assets/bgk-middle.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 100px 0;
-
-  text-align: center;
-}
-
-.story-text {
-  font-size: 24px;
-  color: white;
-  margin: 0;
-}
-.story-icon:hover {
-  transform: scale(1.2);
-}
-
-.story-icon {
-  width: 50px;
-  height: auto;
-  margin-bottom: 10px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.story-icon:hover {
-  transform: scale(1.2);
-}
-
-.story-text-container {
-  text-align: center;
-
-  overflow: hidden;
-}
-/*hajar------------------------------------------------------*/
-
-/*--------- EXPERTISE ------------------------BEGIN---------------------------------------*/
+/*Renke --------- EXPERTISE ---------------------------------------------------------------*/
 #expertise {
+
   margin-top: 2rem;
   margin-bottom: 3rem;
+
 }
 
 wrapper-for-the-title-text,
@@ -275,6 +197,7 @@ wrapper-for-the-main-content {
 }
 
 wrapper-for-the-title-text {
+
   justify-items: center;
   font-family: var(--font-serif);
   padding-bottom: 2rem;
@@ -303,6 +226,7 @@ wrapper-for-the-title-text hr {
   /* background-color: var(--color-light-grey); */
   background-color: var(--color-light-grey);
   opacity: 0.5;
+
 }
 
 wrapper-for-the-main-content {
@@ -320,6 +244,7 @@ wrapper-for-the-main-content {
 }
 
 card-wrapper {
+
   display: grid;
   justify-items: center;
   /*distance between elemts within the card*/
@@ -355,11 +280,14 @@ text-sub {
 #card3 {
   border-left: 0.2px solid rgb(198, 196, 201, 0.5);
   border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
+
+}
+/*--------- EXPERTISE ---------------------------------------------------------------*/
+
+/*--------- TEAM ---------------------------------------------------------------*/
+#team {
 }
 
-#card4 {
-  border-right: 0.2px solid rgb(198, 196, 201, 0.5);
-}
 #card6 {
   border-left: 0.2px solid rgb(198, 196, 201, 0.5);
 }
@@ -389,6 +317,7 @@ text-sub {
 /*--------- EXPERTISE ---------------------------END------------------------------------*/
 
 /*--------- TEAM -------------------------------BEGIN--------------------------------*/
+
 background-🖻-middle {
   background-image: url("./design-assets/bgk-header.png");
   min-width: 100svw;
@@ -404,6 +333,7 @@ background-🖻-middle {
 }
 
 wrapper-for-the-title-text-team {
+
   margin-top: 4rem;
   display: grid;
   /* justify-items: center; */
@@ -435,6 +365,7 @@ wrapper-for-the-title-text-team hr {
   width: 2.5rem;
   background-color: var(--color-light-grey);
   opacity: 0.5;
+
 }
 
 team-cards-container {
@@ -448,6 +379,7 @@ team-cards-container {
 }
 
 team-card {
+
   border: 0.1px solid rgb(198, 196, 201, 0.4);
   /* display: flex;
   flex-direction: column; */
@@ -485,6 +417,7 @@ card-footer {
     text-transform: uppercase;
     opacity: 0.6;
   }
+
 }
 
 wrapper-bottom {
@@ -500,6 +433,7 @@ wrapper-bottom {
   }
 }
 wrapper-bottom button {
+
   text-transform: uppercase;
   color: var(--color-turquoise);
   font-size: 0.7rem;
@@ -545,6 +479,7 @@ wrapper-bottom button {
 
 /*------Ali-------------------------*/
 
+
 @media screen and (min-width: 80rem) {
   .section5 {
     margin: 1em 2em;
@@ -559,6 +494,7 @@ wrapper-bottom button {
   padding: 10rem 10rem 10rem 5rem;
 }
 .sform {
+
   width: 25rem;
   display: block;
   flex-wrap: wrap;
@@ -587,6 +523,7 @@ wrapper-bottom button {
 .section5 textarea {
   padding: 0.5rem 0.5rem;
   width: 23.8rem;
+
 }
 
 .s-btn {
@@ -785,7 +722,8 @@ wrapper-bottom button {
 
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+}<
+
 
 element.style {
   height: 100%;
@@ -851,3 +789,4 @@ a {
     text-decoration: none;
   }
 }
+
