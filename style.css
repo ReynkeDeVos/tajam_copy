@@ -5,6 +5,23 @@
   box-sizing: border-box;
 }
 
+/* Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Hammersmith One */
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Playfair Display  */
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Roboto", sans-serif;
+  --font-sans-bold: "Hammersmith One", sans-serif;
+
+  --color-dark-grey: #636268;
+  --color-light-grey: #c6c4c9;
+  --color-turquoise: #00e0d0;
+}
+
 html {
   /* 1rem = 10px */
   /* font-size: 62.5%; */
@@ -37,24 +54,16 @@ footer {
   min-height: 50svh;
 }
 
-.navbar {
-}
-
 .türkis {
   color: #00e0d0;
 }
-
 .logo1 {
   display: flex;
   align-items: left;
   justify-content: left;
-  padding: 3% 30% 20% 10%;
+  /* padding: 3% 10% 20% 10%; */
   height: Auto;
   width: 100%;
-}
-
-.Logonav {
-  display: flex;
 }
 header {
   height: 20px;
@@ -69,16 +78,87 @@ header a,
   text-decoration: none;
   white-space: nowrap;
 }
-
+.Logonav {
+  display: flex;
+}
 .hero-section {
   color: #f1f0f7;
   text-align: center;
   padding: 15% 15%;
   text-align: center;
 }
+.navbar {
+  padding: 25px 30px;
+  background-color: #333061;
+  font-family: Arial, sans-serif;
+  font-size: small;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.hero-section {
+  background-image: url("./design-assets/bgk-header.png");
+  background-size: cover;
+  color: #f1f0f7;
+  text-align: center;
+  padding: 25% 30%;
+  text-align: center;
+}
 
 /* Sabrina Header und Hero Section END */
+header img,
+.hero-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
 
+header h1,
+.hero-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+header p,
+.hero-section p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+header a,
+.hero-section a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #68dacd;
+
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    height: 100%;
+    padding-top: 20px;
+    text-align: right;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+  }
+}
+/*-----Sabrina-------------------------------------------------------*/
+
+/*hajar------------Story------------------------------------------*/
 .story {
   background-color: white;
 
@@ -181,7 +261,50 @@ header a,
   width: auto;
 }
 
-/*Renke --------- EXPERTISE ---------------------------------------------------------------*/
+/*hajar------------------Watch------------------------------------*/
+.story-section {
+  background-image: url("./design-assets/bgk-middle.png");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+
+  text-align: center;
+}
+
+.story-text {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+}
+.story-icon:hover {
+  transform: scale(1.2);
+}
+
+.story-icon {
+  width: 50px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.story-icon:hover {
+  transform: scale(1.2);
+}
+
+.story-text-container {
+  text-align: center;
+
+  overflow: hidden;
+}
+/*hajar------------------------------------------------------*/
+
+/*--------- EXPERTISE ------------------------BEGIN---------------------------------------*/
 #expertise {
   margin-top: 2rem;
   margin-bottom: 3rem;
@@ -274,9 +397,10 @@ text-sub {
   border-left: 0.2px solid rgb(198, 196, 201, 0.5);
   border-bottom: 0.2px solid rgb(198, 196, 201, 0.5);
 }
-/*--------- EXPERTISE ---------------------------------------------------------------*/
 
-/*--------- TEAM ---------------------------------------------------------------*/
+#card4 {
+  border-right: 0.2px solid rgb(198, 196, 201, 0.5);
+}
 #card6 {
   border-left: 0.2px solid rgb(198, 196, 201, 0.5);
 }
@@ -306,7 +430,6 @@ text-sub {
 /*--------- EXPERTISE ---------------------------END------------------------------------*/
 
 /*--------- TEAM -------------------------------BEGIN--------------------------------*/
-
 background-🖻-middle {
   background-image: url("./design-assets/bgk-header.png");
   min-width: 100svw;
